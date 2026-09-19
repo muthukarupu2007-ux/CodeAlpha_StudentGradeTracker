@@ -1,32 +1,51 @@
-# CodeAlpha Java Programming Internship Projects
+# Student Grade Tracker
 
-This folder contains three Java projects completed as part of the CodeAlpha Java Programming Internship:
+## Project Description
+This project is a simple Java console application that helps a teacher or administrator manage student records. It stores student details, calculates marks statistics, and assigns grades.
 
-- Student Grade Tracker
-- AI Chatbot
-- Hotel Reservation System
-
-Each project is designed as an independent Java console application and is ready to be uploaded as a separate GitHub repository.
-
-## Projects Included
-
-### 1. Student Grade Tracker
-A beginner-friendly program for storing student records, calculating marks statistics, and assigning grades.
-
-### 2. AI Chatbot
-A rule-based Java chatbot that responds to common questions using simple keyword matching.
-
-### 3. Hotel Reservation System
-A console-based hotel booking system that manages room availability, reservations, and saved booking data.
+## Features
+- Add student ID, name, and marks
+- Store students in an ArrayList
+- Calculate average, highest, and lowest score
+- Assign grades using the required rules
+- View all student records
+- Search student by ID
+- Validate marks between 0 and 100
+- Handle invalid input without crashing
 
 ## Technologies Used
-
 - Java
-- Core OOP concepts
+- OOP (Student class)
 - ArrayList
 - Scanner
-- File I/O
 
-## Notes
+## How to Compile
+Open a terminal in the project folder and run:
 
-These are simple, readable Java applications created for internship learning and submission. They are meant to be clear, easy to explain, and easy to compile and run.
+```bash
+javac -d out src/*.java
+```
+
+## How to Run
+After compiling:
+
+```bash
+java -cp out StudentGradeTracker
+```
+
+## Sample Output
+```text
+===== STUDENT GRADE TRACKER =====
+1. Add Student
+2. View All Students
+3. Calculate Statistics
+4. Search Student
+5. Exit
+Choose an option: 1
+Enter Student ID: S101
+Enter Student Name: Alice
+Enter Marks (0-100): 85
+Student added successfully.
+```
+
+This project is beginner-friendly and simple enough to explain clearly in an internship presentation.
